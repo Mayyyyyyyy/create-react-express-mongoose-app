@@ -5,9 +5,41 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: url('./assets/background.jpg') no-repeat;
+  background-position: center 0;
+  background-size: cover;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.App{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.input{
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  outline: none;
+  padding: 0 10px 9px;
+  margin-right: 10px;
+}
+
+.input::placeholder{
+   color: rgba(255, 255, 255, 0.623);
+}
+
+.button{
+  border: none;
+  background-color: #ffafbd;
+  padding: 10px 10px;
+}
+.button:hover{
+  background-color: rgb(187, 77, 132);
 }
